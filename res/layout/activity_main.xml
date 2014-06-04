@@ -9,7 +9,7 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/txvMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -22,9 +22,9 @@
         android:id="@+id/btnOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/txvMsg"
         android:layout_marginTop="69dp"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_toRightOf="@+id/txvMsg"
         android:text="OK" />
 
     <EditText

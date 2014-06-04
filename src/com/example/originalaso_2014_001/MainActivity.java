@@ -51,24 +51,23 @@ View.OnClickListener
 						//インテントのインスタンス生成
 						intent = new Intent(MainActivity.this,DaikichiActivity.class);
 						//次画面のアクティビティ起動
-						startActivity(intent);
 						break;
 					case 1:
 						//1なら忠吉のページへ飛ばす
 						intent = new Intent(MainActivity.this,ChuukichiActivity.class);
-						startActivity(intent);
 						break;
 					case 2:
 						intent = new Intent(MainActivity.this,KyouActivity.class);
 						//次画面のアクティビティ起動
-						startActivity(intent);
 						break;
 					case 3:
 						intent = new Intent(MainActivity.this,DaikyouActivity.class);
 						//次画面のアクティビティ起動
-						startActivity(intent);
 						break;
 				}
+				intent.putExtra("name", inputMsg);
+				//次画面のアクティビティ起動
+				startActivity(intent);
 		}
 	}
 
